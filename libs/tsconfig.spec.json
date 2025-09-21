@@ -1,14 +1,10 @@
 {
-  "extends": "../../tsconfig.base.json",
+  "extends": "../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "./out-tsc/jest",
     "jsx": "react-jsx",
-    "types": ["jest", "node"],
-    "noUnusedLocals": false,
-    "lib": ["dom"],
-    
+    "types": ["jest", "node"]
   },
-  "files": ["src/test-setup.ts"],
   "include": [
     "jest.config.ts",
     "src/**/*.test.ts",
@@ -23,7 +19,7 @@
   ],
   "references": [
     {
-      "path": "./tsconfig.app.json"
+      "path": "./tsconfig.lib.json"
     }
   ]
 }

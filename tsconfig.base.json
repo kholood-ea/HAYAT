@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "composite": true,
+    "baseUrl": ".",
     "declarationMap": true,
     "emitDeclarationOnly": true,
     "importHelpers": true,
@@ -16,6 +17,11 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["@hayat/source"]
+    "customConditions": ["@hayat/source"],
+    "paths": {
+      "@hayat/core": ["libs/core/src/index.ts"],
+      "@hayat/data": ["libs/data/src/index.ts"],
+      "@hayat/ui": ["libs/ui/src/index.ts"]
+    }
   }
 }
